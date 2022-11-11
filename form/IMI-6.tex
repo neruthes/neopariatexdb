@@ -1,0 +1,65 @@
+\input{.lib/form.class.tex}
+\begin{document}
+\NDFormCommonHeaderImpl{IMI-6}{Special Entry Permit}{特别入境许可 \S{} Permis d'entrée spécial}
+
+\parbox[c]{14em}{
+	Permit No.\\
+	\ttfamily
+	\Large
+	938682172
+}
+\hfill
+\parbox[c]{24em}{
+	\flushright
+	\scalebox{3}[5]{\fontspec{Libre Barcode 39}*938682172*}
+}
+
+\makeplainbox{}{
+	\fontspec{ocrb10}\fontsize{10pt}{10pt}\selectfont
+	VSNEOZHANG<SAN<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\par\vskip 5pt
+	9386821728TWN0001018M2310015123456789030<<<
+}
+
+
+
+
+\begin{tabu}{|l|X|l|X|}
+	\hline
+	{\formfieldlead Full Name (ASCII)} & \multicolumn3{l|}{\ttfamily ZHANG SAN}                                                          \\
+	\hline
+	{\formfieldlead Full Name (Raw) *} & \multicolumn3{l|}{\ttfamily 张三}                                                               \\
+	\hline
+	\hline
+	{\formfieldlead Date of Birth}     & {\ttfamily 2000-01-01}                 & {\formfieldlead Document No.} & {\ttfamily 123456789}  \\
+	\hline
+	\hline
+	{\formfieldlead Category}          & {\ttfamily B-1 Short visit}            & {\formfieldlead Permit No.}   & {\ttfamily 938682172}  \\
+	\hline
+	{\formfieldlead Period of Sojourn} & {\ttfamily 30 DAYS}                    & {\formfieldlead Last Entry}   & {\ttfamily 2023-10-01} \\
+	\hline
+	\hline
+	{\formfieldlead Comment *}         & \multicolumn3{l|}{\ttfamily
+	Alien without politically acceptable passport.}                                                                                      \\[3.2em]
+	\hline
+\end{tabu}
+
+\begin{tabu}{|X|X|}
+	\hline
+	{\formfieldlead Entry Stamp} & {\formfieldlead Exit Stamp\vspace{40mm}} \\
+	\hline
+\end{tabu}
+
+
+
+
+
+
+\small
+INSTRUCTIONS:
+\inlinelistitem This Special Travel Permit may be issued to a traveler who does not qualify a visa due to causes beyond their personal control, e.g. being unable to travel with a politically (diplomatically) acceptable passport.
+\inlinelistitem You shall print this permit after receiving it digitally, and use the printed copy for immigration clearance.
+\inlinelistitem You shall use the same printed copy for exit after using it for entry.
+\inlinelistitem This permit must be used in combination with your primary travel document, whose number is specified above.
+
+
+\end{document}

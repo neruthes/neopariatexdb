@@ -1,0 +1,34 @@
+\newcommand{\NDFormCommonHeaderImpl}[3]{
+	% argv: code/titleLarge/titleSmall
+	\noindent\begin{minipage}{\textwidth-12em-1.5em}
+		\sffamily\normalsize NEOPARIA DEMOKRATIA\par
+		\sffamily\LARGE#2\par\vskip 7pt
+		\small#3\par%
+	\end{minipage}\hfill%
+	\fbox{\parbox{12em}{%
+			\begin{center}
+				\ttfamily
+				\small FORM CODE\par
+				\LARGE
+				#1
+			\end{center}%
+		}}\par
+	\vskip 5pt
+	\rule{\textwidth}{2pt}
+	\vskip 15pt
+}
+
+
+\newcommand{\makeplainbox}[2]{
+	\begin{tcolorbox}[boxrule=0.4pt,arc=0pt,colback=white,colframe=black#1,left=\tabcolsep-0.4pt,right=\tabcolsep-0.4pt]
+		#2
+	\end{tcolorbox}
+}
+
+
+\newcommand{\makesoftformbrick}[3]{%
+    \parbox{#1}{%
+        #2\par\vskip 1pt%
+        \normalsize\ttfamily#3
+    }%
+}

@@ -1,0 +1,64 @@
+\input{.lib/form.class.tex}
+% \setlength{\fboxsep}{0pt}
+
+\begin{document}
+\NDFormCommonHeaderImpl{IMI-7}{Laissez-Passer}{旅行证 \S{} Laissez-Passer}
+
+
+
+
+\begin{minipage}[b][106mm][t]{88mm}
+	\parskip=7pt
+	\makesoftformbrick{0.2\linewidth}{\formfieldlead Type}{L}%
+	\makesoftformbrick{0.4\linewidth}{\formfieldlead Country Code}{NEO}%
+	\makesoftformbrick{0.4\linewidth}{\formfieldlead Doc No}{L12345678}%
+	\par\vskip 5pt\hrule
+	\makesoftformbrick{\linewidth}{\formfieldlead Full Name (ASCII)}{WANG TAO}%
+	\par\vskip 5pt\hrule
+	\makesoftformbrick{0.5\linewidth}{\formfieldlead Date of Birth}{2000-01-01}%
+	\makesoftformbrick{0.5\linewidth}{\formfieldlead Date of Issue}{2024-01-01}%
+	\par\vskip 5pt\hrule
+	\makesoftformbrick{0.5\linewidth}{\formfieldlead Place of Issue}{DAMASCUS}%
+	\makesoftformbrick{0.5\linewidth}{\formfieldlead Date of Expiry}{2026-01-01}%
+	\par\vskip 5pt\hrule
+	\makesoftformbrick{\linewidth}{\formfieldlead Officer}{Sayid Kusanali}%
+	\par\vskip 5pt\hrule
+	\makesoftformbrick{\linewidth}{\formfieldlead Authority}{Special Aid Mission in Syria}%
+
+	\vfill
+	\parbox{\linewidth}{
+		\fontspec{ocrb9}\fontsize{9pt}{9pt}\selectfont
+		PLNEOWANG<TAO<<<<<<<<<<<<<<<<<<<<<<<<<\par\vskip 5pt
+		L123456781<<<0001018M2610014<<<<<<<<<<
+	}
+\end{minipage}\hfill%
+\fbox{%
+	\begin{minipage}[b][106mm][t]{88mm}
+		\small VISA\par\vfill Page 02
+	\end{minipage}%
+}\par
+
+\fbox{%
+	\begin{minipage}[b][106mm][b]{88mm}
+		\small VISA\par\vfill Page 03
+	\end{minipage}%
+}\hfill%
+\fbox{%
+	\begin{minipage}[b][106mm][b]{88mm}
+		\small VISA\par\vfill Page 04
+	\end{minipage}%
+}\par
+
+
+
+
+
+\vfill
+\small
+NOTES:
+\inlinelistitem This Laissez-Passer is issued in lieu of passport and may be used as a primary travel document.
+\inlinelistitem This Laissez-Passer does not imply citizenship in Neoparia Demokratia.
+\inlinelistitem This Laissez-Passer does not imply the permission to enter Neoparia Demokratia. A Special Entry Permit may be granted for that purpose.
+
+
+\end{document}

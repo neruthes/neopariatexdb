@@ -1,0 +1,79 @@
+\input{.lib/form.class.tex}
+\begin{document}
+\NDFormCommonHeaderImpl{IMI-1}{Visa Application Form}{签证申请表 \S{} Formulaire de demande de visa}
+
+
+
+\begin{minipage}{\textwidth}
+	\small
+	INSTRUCTIONS:
+	\inlinelistitem You may file a paper-based application only if you do not qualify electronic visa application.
+	\inlinelistitem This form must be filled with American English or Simplified Chinese.
+	\inlinelistitem If you plan to travel as a group with other persons (friend/family), attach an IMI-2 form.
+	\inlinelistitem According to the purpose of your planned travel, attach an IMI-3 form (Domestic Tour Plan, for nonresidential purposes) or an IMI-4 form (Residing Plan, for residential purposes).
+	\inlinelistitem Fields marked with asterisk (*) are optional.
+\end{minipage}
+
+
+
+\begin{tabu}{|l|X|}
+	\hline
+	{\formfieldlead Full Name (ASCII)}                                                                                                                     & {} \\
+	\hline
+	{\formfieldlead Full Name (Raw)\footnote{Full Name (Raw): The raw writing of the name of the applicant. This may or may not be digitally recorded.} *} & {} \\
+	\hline
+	{\formfieldlead Passport MRZ}                                                                                                                          & {} \\
+	\hline
+\end{tabu}
+{\small First line only, without trailing `<' marks.}
+
+\begin{tabu}{|l|X|l|X|}
+	\hline
+	{\formfieldlead Nationality\footnote{Nationality: Copy the 3-5 characters in the first line of your passport MRZ.}} & {} & {\formfieldlead Passport No.}                                                                         & {} \\
+	\hline
+	{\formfieldlead Date of Birth}                                                                                      & {} & {\formfieldlead Passport Expiry}                                                                      & {} \\
+	\hline
+	{\formfieldlead Date of Arrival}                                                                                    & {} & {\formfieldlead Date of Exit\footnote{Date of Exit: Leave empty when applying for residential visa.}} & {} \\
+	\hline
+\end{tabu}
+{\small Date format: YYYY-MM-DD. Use the Gregorian calendar.}
+
+\begin{tabu}{|l|X|l|X[3]|}
+	\hline
+	{\formfieldlead Purpose Code} & {} & {\formfieldlead Purpose Comment *} & {} \\
+	\hline
+\end{tabu}
+{\small Browse the list of visa categories before filling the 2 fields above.}
+
+% \begin{tabu}{|l|X|}
+% 	\hline
+% 	{\formfieldlead Primary Address} & {} \\
+% 	\hline
+% \end{tabu}
+
+\begin{tabu}{|l|X|l|X[2]|}
+	\hline
+	{\formfieldlead Address}     & \multicolumn3{l|}{}                                  \\
+	\hline
+	{\formfieldlead Phone No. *} & {}                  & {\formfieldlead Email *} & {} \\
+	\hline
+\end{tabu}
+
+% \rule{\linewidth}{3pt}
+
+\makeplainbox{}{
+    \small
+	STATEMENT OF THE APPLICANT:\par\vskip 5pt
+	I hereby swear that the information provided above is accurate. I acknowledge that any error or inaccurary may lead to the denial of issuing visa or the denial of admission upon arrival, or even criminal investigation/prosecution.\par\vskip 5pt
+    \bfseries
+	Signature:\hfill
+	Date:\hfill
+	\hspace{1pt}\par
+}
+
+
+\makeplainbox{,height=60mm}{\center\small OFFICIAL USE ONLY}
+
+
+
+\end{document}

@@ -1,0 +1,67 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[a4paper,textwidth=52em,vmargin=14mm]{geometry}
+
+\usepackage{calc}
+\usepackage{amsmath,xltxtra,fontspec,xunicode}
+\usepackage{titlesec}
+
+\usepackage{paralist,enumitem}
+\setdefaultleftmargin{3em}{3em}{1em}{1em}{1em}{1em}
+
+\usepackage{datetime2}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+	colorlinks=false,
+	pdfpagemode=FullScreen
+}
+
+\usepackage[PunctStyle=plain,RubberPunctSkip=false,CJKglue=\hskip 0pt,CJKecglue=\hskip 4pt plus 20pt]{xeCJK}
+\usepackage{xeCJKfntef}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt
+
+% =========================================
+\usepackage{fancyhdr}
+\usepackage{graphicx,eso-pic}
+
+\usepackage{tabu,tcolorbox}
+
+\setmainfont{Latin Modern Roman}
+\setromanfont{Latin Modern Roman}
+\setsansfont{Inter}
+\setmonofont{JetBrains Mono NL}
+\setCJKmainfont{Noto Serif CJK SC}
+\setCJKromanfont{Noto Serif CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\setCJKmonofont{Noto Sans CJK SC}
+% =========================================
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{4pt}
+\setlength{\tabulinesep}{10pt}
+
+\frenchspacing
+
+
+\newcounter{inlinelistitr}
+\setcounter{inlinelistitr}{1}
+\newcommand{\resetinlinelistitr}[0]{
+	\setcounter{inlinelistitr}{1}
+}
+\newcommand{\inlinelistitem}[0]{%
+	\hskip 1em\arabic{inlinelistitr}. \stepcounter{inlinelistitr}%
+}
+
+
+\newcounter{formfieldindexitr}
+\setcounter{formfieldindexitr}{1}
+\newcommand{\formfieldlead}[0]{%
+	% $^\arabic{formfieldindexitr}$
+	{\footnotesize (\arabic{formfieldindexitr})~}\small
+	\stepcounter{formfieldindexitr}%
+}
+
+
+
+\pagestyle{empty}
+\input{.lib/form.lib.tex}
