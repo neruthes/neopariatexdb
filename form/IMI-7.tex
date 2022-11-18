@@ -9,7 +9,7 @@
 
 \begin{minipage}[b][106mm][t]{88mm}
 	\parskip=7pt
-	\makesoftformbrick{0.2\linewidth}{\formfieldlead Type}{L}%
+	\makesoftformbrick{0.2\linewidth}{\formfieldlead Type}{P}%
 	\makesoftformbrick{0.4\linewidth}{\formfieldlead Country Code}{NEO}%
 	\makesoftformbrick{0.4\linewidth}{\formfieldlead Doc No}{L12345678}%
 	\par\vskip 5pt\hrule
@@ -21,31 +21,49 @@
 	\makesoftformbrick{0.5\linewidth}{\formfieldlead Place of Issue}{DAMASCUS}%
 	\makesoftformbrick{0.5\linewidth}{\formfieldlead Date of Expiry}{2026-01-01}%
 	\par\vskip 5pt\hrule
-	\makesoftformbrick{\linewidth}{\formfieldlead Officer}{Sayid Kusanali}%
+	\makesoftformbrick{\linewidth}{\formfieldlead Officer}{\rmfamily Sayid Vanarana}%
 	\par\vskip 5pt\hrule
-	\makesoftformbrick{\linewidth}{\formfieldlead Authority}{Special Aid Mission in Syria}%
-
+	\makesoftformbrick{\linewidth}{\formfieldlead Authority}{\rmfamily Special Aid Mission in Syria}%
+	\par\vskip 5pt\hrule
+	\makesoftformbrick{\linewidth}{\formfieldlead Comments}{\rmfamily\vbox to 3.5em{\raggedright<1> 090 days of sojourn granted. <2> Guardian of minor WANG JIALEI (L12345677). //}}
+	\par\vskip 5pt\hrule
+    
 	\vfill
 	\parbox{\linewidth}{
-		\fontspec{ocrb9}\fontsize{9pt}{9pt}\selectfont
+		\fontspec{ocrb9}%
+        \fontsize{9pt}{9pt}\selectfont%
 		PLNEOWANG<TAO<<<<<<<<<<<<<<<<<<<<<<<<<\par\vskip 5pt
 		L123456781<<<0001018M2610014<<<<<<<<<<
 	}
 \end{minipage}\hfill%
 \fbox{%
 	\begin{minipage}[b][106mm][t]{88mm}
-		\small VISA\par\vfill Page 02
+		\small VISA\par\vskip 20pt
+
+        \parbox{\linewidth}{
+            % \fontspec{JetBrains Mono NL}
+            \rmfamily\raggedright
+            \normalsize
+            % \bfseries
+            OBSERVATIONS\par
+            1. The name of the bearer may also be spelled as ``WONG TAU''.\par
+            \rule{100pt}{1pt}
+        }
+        
+        \vfill Page 02
 	\end{minipage}%
 }\par
 
 \fbox{%
 	\begin{minipage}[b][106mm][b]{88mm}
-		\small VISA\par\vfill Page 03
+		\small VISA\par\vskip 20pt
+        \vfill Page 03
 	\end{minipage}%
 }\hfill%
 \fbox{%
 	\begin{minipage}[b][106mm][b]{88mm}
-		\small VISA\par\vfill Page 04
+		\small VISA\par\vskip 20pt
+        \vfill Page 04
 	\end{minipage}%
 }\par
 

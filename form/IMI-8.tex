@@ -1,0 +1,44 @@
+\input{.lib/form.class.tex}
+% \setlength{\fboxsep}{0pt}
+
+\begin{document}
+\NDFormCommonHeaderImpl{IMI-8}{Electronic Visa Confirmation}{电子签证确认函 \S{} Confirmation de visa électronique}
+
+
+This is to certify that the following person has been granted electronic visa.
+
+This letter is not a travel document.
+
+\vskip 20pt
+
+
+\begin{tabu}{|l|X|l|X|}
+	\hline
+	{\formfieldlead Full Name (ASCII)} & \multicolumn3{l|}{\ttfamily ZHANG SAN}                                                         \\
+	\hline
+	{\formfieldlead Full Name (Raw) *} & \multicolumn3{l|}{\ttfamily 张三}                                                              \\
+	\hline
+	\hline
+	{\formfieldlead Date of Birth}     & {\ttfamily 2000-01-01}                 & {\formfieldlead Passport No.} & {\ttfamily 123456789} \\
+	\hline
+	\hline
+	{\formfieldlead Category}          & {B-1 Short visit}                      & {\formfieldlead Visa No.}     & {\ttfamily 111222333}           \\
+	\hline
+	{\formfieldlead Period of Sojourn} & {30 DAYS}                              & {\formfieldlead Last Entry}   & {\ttfamily 2023-10-01}          \\
+	\hline
+	\hline
+	{\formfieldlead Comment *}         & \multicolumn3{l|}{\ttfamily
+	TEST.}                                                                                                                              \\[3.2em]
+	\hline
+\end{tabu}
+
+
+
+
+% \vfill
+% \small
+% NOTES:
+% \inlinelistitem Hello world.
+
+
+\end{document}
