@@ -1,0 +1,60 @@
+\input{.lib/form.class.tex}
+\begin{document}
+\NDFormCommonHeaderImpl{IMI-9}{Visa Applicant Identity Statement}{签证申请人身份声明 \S{} Déclaration d'identité du demandeur du visa}
+
+
+
+\begin{minipage}{\textwidth}
+	\small
+	\textbf{INSTRUCTIONS}:
+	\inlinelistitem When applying for visa, if you have more than one valid primary travel document, you shall declare all your alternative identities.
+\end{minipage}
+
+
+\section*{Main Identity}
+
+\par\vskip 9pt\hrule
+\makesoftformbrick{\linewidth}{\formfieldlead Full Name (ASCII)\footnote{Full Name (ASCII): All uppercase letters. Ignore diacritics. Copy from your passport.}}{~}%
+\par\vskip 9pt\hrule
+\makesoftformbrick{0.5\linewidth}{\formfieldlead Country Code}{~}%
+\makesoftformbrick{0.5\linewidth}{\formfieldlead Passport No.}{~}%
+\par\vskip 9pt\hrule
+
+\section*{Alternative Identities}
+
+\tabulinesep=15pt
+\begin{tabu}{|l|l|X[2]|X|}
+	\hline
+	Country Code & Nationality Code & Full Name (ASCII) & Document No. \\
+	\hline
+	{}           & {}               & {}                & {}           \\
+	\hline
+	{}           & {}               & {}                & {}           \\
+	\hline
+	{}           & {}               & {}                & {}           \\
+	\hline
+	{}           & {}               & {}                & {}           \\
+	\hline
+	{}           & {}               & {}                & {}           \\
+	\hline
+	{}           & {}               & {}                & {}           \\
+	\hline
+	{}           & {}               & {}                & {}           \\
+	\hline
+	{}           & {}               & {}                & {}           \\
+	\hline
+	{}           & {}               & {}                & {}           \\
+	\hline
+	{}           & {}               & {}                & {}           \\
+	\hline
+	{}           & {}               & {}                & {}           \\
+	\hline
+\end{tabu}
+
+
+
+% \makeplainbox{,height=60mm}{\center\small OFFICIAL USE ONLY}
+
+
+
+\end{document}

@@ -28,7 +28,15 @@
 
 \newcommand{\makesoftformbrick}[3]{%
     \parbox{#1}{%
-        #2\par\vskip 1pt%
+        \vskip 4pt%
+        \vbox to 9.5pt{\small#2\vfill}\par%
         \normalsize\ttfamily#3
+        \vskip 3pt%
     }%
 }
+\newcommand{\formbrickVlineLeft}[0]{\vrule\hskip 5pt}
+\newcommand{\formbrickVlineMid}[0]{\hskip 5pt\vrule\hskip 5pt}
+\newcommand{\formbrickVlineRight}[0]{\hfill\vrule}
+
+
+

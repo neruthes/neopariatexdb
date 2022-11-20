@@ -1,0 +1,77 @@
+\input{.lib/form.class.tex}
+\begin{document}
+\NDFormCommonHeaderImpl{IMI-10}{Arrival Card}{旅客入境卡 \S{} Carte d'arrivée}
+
+
+
+\begin{minipage}{\textwidth}
+	\small
+	\textbf{INSTRUCTIONS}:
+	\inlinelistitem Any traveler who lands in Neoparia Demokratia by civil transportation (aircraft, cruise, etc) is required to fill this form, with the following exceptions: citizens, permanent residents, foreign diplomats.
+    \inlinelistitem Declare your accompanying travelers (for family usage only) so that they do not have to fill their own arrival cards.
+    \inlinelistitem Please write in uppercase letters. ASCII letters only, without diacritics.
+\end{minipage}
+\vskip 20pt
+
+
+
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{0.9\linewidth}{\formfieldlead Full Name (ASCII)}{\vspace{1.5em}}\formbrickVlineRight%
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{0.9\linewidth}{\formfieldlead Full Name (Raw) (Leave empty if identical to ASCII)}{\vspace{1.5em}}\formbrickVlineRight%
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{0.45\linewidth}{\formfieldlead Country Code (ISO 3166 alpha-3)}{\vspace{1.5em}}\formbrickVlineMid%
+\makesoftformbrick{0.45\linewidth}{\formfieldlead Passport No.}{\vspace{1.5em}}\formbrickVlineRight%
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{0.3\linewidth}{\formfieldlead Date of Birth (YYYY-MM-DD)}{\vspace{1.5em}}\formbrickVlineMid%
+\makesoftformbrick{0.3\linewidth}{\formfieldlead Entry Date (YYYY-MM-DD)}{\vspace{1.5em}}\formbrickVlineMid%
+\makesoftformbrick{0.3\linewidth}{\formfieldlead Flight No.}{\vspace{1.5em}}\formbrickVlineRight%
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{0.45\linewidth}{\formfieldlead Port of Departure}{\vspace{1.5em}}\formbrickVlineMid%
+\makesoftformbrick{0.45\linewidth}{\formfieldlead Port of Arrival}{\vspace{1.5em}}\formbrickVlineRight%
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{0.9\linewidth}{\formfieldlead Purpose (fill black)}{\rmfamily $\bigcirc$ Transit / $\bigcirc$ Short Stay / $\bigcirc$ Long Stay / $\bigcirc$ Re-entry}\formbrickVlineRight%
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{0.9\linewidth}{\formfieldlead Primary Address or First Night Stay Address}{\vspace{1.5em}}\formbrickVlineRight%
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{0.9\linewidth}{\formfieldlead Resident ID (if applicable)}{\vspace{1.5em}}\formbrickVlineRight%
+\par\hrule
+
+
+
+
+\section*{Travelers in Group}
+
+
+\par\hrule
+\formbrickVlineLeft 1.\formbrickVlineMid%
+\makesoftformbrick{0.35\linewidth-40pt}{Full Name (ASCII)}{\vspace{1.5em}}\hfill\formbrickVlineMid%
+\makesoftformbrick{0.21\linewidth}{Passport No}{\vspace{1.5em}}\formbrickVlineMid%
+\makesoftformbrick{0.27\linewidth}{Date of Birth (YYYY-MM-DD)}{\vspace{1.5em}}\vrule%
+\par\hrule
+\formbrickVlineLeft 2.\formbrickVlineMid%
+\makesoftformbrick{0.35\linewidth-40pt}{Full Name (ASCII)}{\vspace{1.5em}}\hfill\formbrickVlineMid%
+\makesoftformbrick{0.21\linewidth}{Passport No}{\vspace{1.5em}}\formbrickVlineMid%
+\makesoftformbrick{0.27\linewidth}{Date of Birth (YYYY-MM-DD)}{\vspace{1.5em}}\vrule%
+\par\hrule
+\formbrickVlineLeft 3.\formbrickVlineMid%
+\makesoftformbrick{0.35\linewidth-40pt}{Full Name (ASCII)}{\vspace{1.5em}}\hfill\formbrickVlineMid%
+\makesoftformbrick{0.21\linewidth}{Passport No}{\vspace{1.5em}}\formbrickVlineMid%
+\makesoftformbrick{0.27\linewidth}{Date of Birth (YYYY-MM-DD)}{\vspace{1.5em}}\vrule%
+\par\hrule
+\formbrickVlineLeft 4.\formbrickVlineMid%
+\makesoftformbrick{0.35\linewidth-40pt}{Full Name (ASCII)}{\vspace{1.5em}}\hfill\formbrickVlineMid%
+\makesoftformbrick{0.21\linewidth}{Passport No}{\vspace{1.5em}}\formbrickVlineMid%
+\makesoftformbrick{0.27\linewidth}{Date of Birth (YYYY-MM-DD)}{\vspace{1.5em}}\vrule%
+\par\hrule
+
+
+\end{document}

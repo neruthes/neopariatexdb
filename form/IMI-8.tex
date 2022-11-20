@@ -11,34 +11,30 @@ This letter is not a travel document.
 
 \vskip 20pt
 
-
-\begin{tabu}{|l|X|l|X|}
-	\hline
-	{\formfieldlead Full Name (ASCII)} & \multicolumn3{l|}{\ttfamily ZHANG SAN}                                                         \\
-	\hline
-	{\formfieldlead Full Name (Raw) *} & \multicolumn3{l|}{\ttfamily 张三}                                                              \\
-	\hline
-	\hline
-	{\formfieldlead Date of Birth}     & {\ttfamily 2000-01-01}                 & {\formfieldlead Passport No.} & {\ttfamily 123456789} \\
-	\hline
-	\hline
-	{\formfieldlead Category}          & {B-1 Short visit}                      & {\formfieldlead Visa No.}     & {\ttfamily 111222333}           \\
-	\hline
-	{\formfieldlead Period of Sojourn} & {30 DAYS}                              & {\formfieldlead Last Entry}   & {\ttfamily 2023-10-01}          \\
-	\hline
-	\hline
-	{\formfieldlead Comment *}         & \multicolumn3{l|}{\ttfamily
-	TEST.}                                                                                                                              \\[3.2em]
-	\hline
-\end{tabu}
-
-
-
-
-% \vfill
-% \small
-% NOTES:
-% \inlinelistitem Hello world.
+\par\vskip 7pt\hrule\vskip 4pt
+\makesoftformbrick{\linewidth}{Full Name (ASCII)}{ZHANG SAN}%
+\par\vskip 7pt\hrule\vskip 4pt
+\makesoftformbrick{\linewidth}{Full Name (Raw)}{张三}%
+\par\vskip 7pt\hrule\vskip 4pt
+\makesoftformbrick{0.33\linewidth}{Date of Birth}{2000-01-01}%
+\makesoftformbrick{0.33\linewidth}{Nationality}{CHN}%
+\makesoftformbrick{0.33\linewidth}{Passport No.}{123456789}%
+\par\vskip 7pt\hrule\vskip 4pt
+\par\vskip 7pt\hrule\vskip 4pt
+\makesoftformbrick{0.33\linewidth}{Visa No.}{111222333}%
+\makesoftformbrick{0.33\linewidth}{Date of Issue}{2023-01-01}%
+\makesoftformbrick{0.33\linewidth}{Last Entry}{2023-10-01}%
+\par\vskip 7pt\hrule\vskip 4pt
+\makesoftformbrick{0.33\linewidth}{Period of Sojourn}{030 DAYS}%
+\makesoftformbrick{0.66\linewidth}{Category}{B-1 Short Visit}%
+\par\vskip 7pt\hrule\vskip 4pt
+\makesoftformbrick{\linewidth}{Self-service Entry with E-gate}{Eligible}%
+\par\vskip 7pt\hrule\vskip 4pt
+\par\vskip 7pt\hrule\vskip 4pt
+\makesoftformbrick{\linewidth}{Comments}{\rmfamily\vbox to 100pt{%
+    Hello world
+}}%
+\par\vskip 7pt\hrule\vskip 4pt
 
 
 \end{document}
