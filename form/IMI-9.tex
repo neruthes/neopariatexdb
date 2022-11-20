@@ -8,52 +8,77 @@
 	\small
 	\textbf{INSTRUCTIONS}:
 	\inlinelistitem When applying for visa, if you have more than one valid primary travel document, you shall declare all your alternative identities.
+	\inlinelistitem An alternative identity includes the situation when you have multiple passports of different classes in one country (e.g. regular passport and diplomatic passport).
+	\inlinelistitem Expired and revoked passports do not count.
+	\inlinelistitem Include the passports which are not politically acceptable, e.g. from a government which is not acknowledged to be a sovereign state.
 \end{minipage}
 
 
 \section*{Main Identity}
 
-\par\vskip 9pt\hrule
-\makesoftformbrick{\linewidth}{\formfieldlead Full Name (ASCII)\footnote{Full Name (ASCII): All uppercase letters. Ignore diacritics. Copy from your passport.}}{~}%
-\par\vskip 9pt\hrule
-\makesoftformbrick{0.5\linewidth}{\formfieldlead Country Code}{~}%
-\makesoftformbrick{0.5\linewidth}{\formfieldlead Passport No.}{~}%
-\par\vskip 9pt\hrule
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{\linewidth-30pt}{\formfieldlead Full Name (ASCII)\footnote{Full Name (ASCII): All uppercase letters. Ignore diacritics. Copy from your passport.}}{\vspace{20pt}}%
+\formbrickVlineRight%
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{0.45\linewidth}{\formfieldlead Country Code}{\vspace{20pt}}\formbrickVlineMid%
+\makesoftformbrick{0.45\linewidth}{\formfieldlead Passport No.}{\vspace{20pt}}%
+\formbrickVlineRight%
+\par\hrule
 
 \section*{Alternative Identities}
 
-\tabulinesep=15pt
-\begin{tabu}{|l|l|X[2]|X|}
-	\hline
-	Country Code & Nationality Code & Full Name (ASCII) & Document No. \\
-	\hline
-	{}           & {}               & {}                & {}           \\
-	\hline
-	{}           & {}               & {}                & {}           \\
-	\hline
-	{}           & {}               & {}                & {}           \\
-	\hline
-	{}           & {}               & {}                & {}           \\
-	\hline
-	{}           & {}               & {}                & {}           \\
-	\hline
-	{}           & {}               & {}                & {}           \\
-	\hline
-	{}           & {}               & {}                & {}           \\
-	\hline
-	{}           & {}               & {}                & {}           \\
-	\hline
-	{}           & {}               & {}                & {}           \\
-	\hline
-	{}           & {}               & {}                & {}           \\
-	\hline
-	{}           & {}               & {}                & {}           \\
-	\hline
-\end{tabu}
+\newcommand{\localformboxA}[0]{
+	\formbrickVlineLeft%
+	\makesoftformbrick{70pt}{Country Code}{\vspace{20pt}}\formbrickVlineMid%
+	\makesoftformbrick{100pt}{Passport No.}{\vspace{20pt}}\formbrickVlineMid%
+	\makesoftformbrick{\linewidth-200pt}{Class (fill black)}{\rmfamily $\bigcirc$ Regular / $\bigcirc$ Diplomatic / $\bigcirc$ Official / $\bigcirc$ Service}%
+	\formbrickVlineRight%
+	\par\hrule
+}
+
+\par\hrule
+\localformboxA
+\localformboxA
+\localformboxA
+\localformboxA
+\localformboxA
+\localformboxA
+\localformboxA
+
+% \tabulinesep=15pt
+% \begin{tabu}{|l|l|X[2]|X|}
+% 	\hline
+% 	Country Code & Nationality Code & Full Name (ASCII) & Document No. \\
+% 	\hline
+% 	{}           & {}               & {}                & {}           \\
+% 	\hline
+% 	{}           & {}               & {}                & {}           \\
+% 	\hline
+% 	{}           & {}               & {}                & {}           \\
+% 	\hline
+% 	{}           & {}               & {}                & {}           \\
+% 	\hline
+% 	{}           & {}               & {}                & {}           \\
+% 	\hline
+% 	{}           & {}               & {}                & {}           \\
+% 	\hline
+% 	{}           & {}               & {}                & {}           \\
+% 	\hline
+% 	{}           & {}               & {}                & {}           \\
+% 	\hline
+% 	{}           & {}               & {}                & {}           \\
+% 	\hline
+% 	{}           & {}               & {}                & {}           \\
+% 	\hline
+% 	{}           & {}               & {}                & {}           \\
+% 	\hline
+% \end{tabu}
 
 
 
-% \makeplainbox{,height=60mm}{\center\small OFFICIAL USE ONLY}
+\makeplainbox{,height=30mm}{\center\small OFFICIAL USE ONLY}
 
 
 
