@@ -7,12 +7,14 @@
 \begin{minipage}{\textwidth}
 	\small
 	\textbf{INSTRUCTIONS}:
+	\inlinelistitem To apply for a visa, your passport must be politically acceptable. Otherwise you may only get a special entry permit (IMI-6).
 	\inlinelistitem You may file a paper-based application only if you do not qualify electronic visa application.
 	\inlinelistitem This form must be filled with American English or Simplified Chinese.
 	\inlinelistitem If you plan to travel as a group with other persons (friend/family), attach an IMI-2 form.
 	\inlinelistitem According to the purpose of your planned travel, attach an IMI-3 form (Domestic Tour Plan, for nonresidential purposes) or an IMI-4 form (Residing Plan, for residential purposes).
 	\inlinelistitem If you have more than one valid travel document, attach an IMI-9 form (Visa Applicant Identity Statement).
 	\inlinelistitem You may not have multiple visas of Neoparia Demokratia simultaneously. If a new visa is granted, the old one shall be revoked. If you already have a visa of Neoparia Demokratia, you must declare its number.
+	\inlinelistitem Your full name (raw) may or may not be digitally recorded, depending on computer software capabilities.
 	\inlinelistitem Fields marked with asterisk (*) are optional.
 	\inlinelistitem Depending on the category applied for, required documents may vary. Consult the latest visa policy before submitting.
 \end{minipage}
@@ -20,63 +22,99 @@
 
 
 
-\begin{tabu}{|l|X|}
-	\hline
-	{\formfieldlead Full Name (ASCII)\footnote{Full Name (ASCII): All uppercase letters. Ignore diacritics. Copy from your passport.}}                                                                                                                     & {} \\
-	\hline
-	{\formfieldlead Full Name (Raw)\footnote{Full Name (Raw): The raw writing of the name of the applicant. This may or may not be digitally recorded.} *} & {} \\
-	\hline
-	{\formfieldlead Passport MRZ}                                                                                                                          & {} \\
-	\hline
-\end{tabu}
-{\small First line only, without trailing `<' marks.}
-\vskip 10pt
+
+\formbrickcontentheight=27pt
+
+\textsf{\small Is an agent filling this form on behalf of the applicant? If not, leave these boxes empty.}
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{0.5\linewidth}{\formfieldlead Agent Full Name}{~}\formbrickVlineMid%
+\makesoftformbrick{0.5\linewidth}{\formfieldlead Relation to the Applicant}{~}\formbrickVlineRight%
+\par\hrule
+\vskip 5pt
+
+\formbrickcontentheight=33pt
+
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{\linewidth}{\formfieldlead Full Name (ASCII) \footnotesize (All uppercase letters.)}{~}\formbrickVlineRight%
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{\linewidth}{\formfieldlead Full Name (Raw) \footnotesize (Leave empty if same to ASCII.)}{~}\formbrickVlineRight%
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{\linewidth}{\formfieldlead Passport MRZ \footnotesize (First line only, without trailing `<' marks.)}{~}\formbrickVlineRight%
+\par\hrule
+\vskip 5pt
+
+\formbrickcontentheight=27pt
+
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{0.33\linewidth}{\formfieldlead Nationality \footnotesize (Country code)}{~}\formbrickVlineMid%
+\makesoftformbrick{0.33\linewidth}{\formfieldlead Passport No.}{~}\formbrickVlineMid%
+\makesoftformbrick{0.33\linewidth}{\formfieldlead Passport Expiry Date}{~}\formbrickVlineRight%
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{0.33\linewidth}{\formfieldlead Date of Birth}{~}\formbrickVlineMid%
+\makesoftformbrick{0.33\linewidth}{\formfieldlead Place of Birth \footnotesize (Country code)}{~}\formbrickVlineMid%
+\makesoftformbrick{0.33\linewidth}{\formfieldlead Old Visa No. *}{~}\formbrickVlineRight%
+\par\hrule
+\formbrickMiniRow{\footnotesize\sffamily Date format: YYYY-MM-DD. Use the Gregorian calendar.}%
+\par\hrule
+\vskip 5pt
+
+\par\hrule
+\formbrickVlineLeft%
+\parbox{\linewidth-6pt}{
+    \leavevmode\vskip 1pt
+	\sffamily
+	\parbox{\linewidth-12em}{Fill black the option applicable to you.}\hfill\parbox{3em}{YES}\parbox{3em}{NO}\\
+	\parbox{\linewidth-12em}{\formfieldlead\sffamily I am or was a government official.}\hfill\parbox{3em}{$\bigcirc$}\parbox{3em}{$\bigcirc$}\\
+	\parbox{\linewidth-12em}{\formfieldlead\sffamily I am the leader of a family application case.}\hfill\parbox{3em}{$\bigcirc$}\parbox{3em}{$\bigcirc$}
+}\formbrickVlineRight%
+\par\hrule
+\vskip 5pt
+
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{0.25\linewidth}{\formfieldlead Category Code}{~}\formbrickVlineMid%
+\makesoftformbrick{0.5\linewidth}{\formfieldlead Category Detail *}{~}\formbrickVlineMid%
+\makesoftformbrick{0.25\linewidth}{\formfieldlead Intended Arrival Date}{~}\formbrickVlineRight%
+\par\hrule
+\formbrickMiniRow{\footnotesize\sffamily Browse the list of visa categories before filling the fields above.}%
+\par\hrule
+\vskip 5pt
 
 
-\begin{tabu}{|l|X|l|X|}
-	\hline
-	{\formfieldlead Nationality\footnote{Nationality: Copy the 3-5 characters in the first line of your passport MRZ.}} & {} & {\formfieldlead Passport No.}                                                                         & {} \\
-	\hline
-	{\formfieldlead Date of Birth}                                                                                      & {} & {\formfieldlead Passport Expiry}                                                                      & {} \\
-	\hline
-	{\formfieldlead Date of Arrival}                                                                                    & {} & {\formfieldlead Date of Exit\footnote{Date of Exit: Leave empty when applying for residential visa.}} & {} \\
-	\hline
-\end{tabu}
-{\small Date format: YYYY-MM-DD. Use the Gregorian calendar.}
-\vskip 10pt
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{\linewidth}{\formfieldlead Home Address}{~}\formbrickVlineRight%
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{0.5\linewidth}{\formfieldlead Email Address}{~}\formbrickVlineMid%
+\makesoftformbrick{0.5\linewidth}{\formfieldlead TEL *}{~}\formbrickVlineRight%
+\par\hrule
+\vskip 5pt
 
 
-\begin{tabu}{|l|X|l|X[3]|}
-	\hline
-	{\formfieldlead Purpose Code} & {} & {\formfieldlead Purpose Comment *} & {} \\
-	\hline
-\end{tabu}
-{\small Browse the list of visa categories before filling the 2 fields above.}
-\vskip 10pt
 
 
-\begin{tabu}{|l|X|l|X[2]|}
-	\hline
-	{\formfieldlead Address}     & \multicolumn3{l|}{}                                  \\
-	\hline
-	{\formfieldlead Phone No. *} & {}                  & {\formfieldlead Email *} & {} \\
-	\hline
-\end{tabu}
-\vskip 10pt
-
-
-\makeplainbox{}{
-    \small
+\parbox{\linewidth}{
+	\small
 	STATEMENT OF THE APPLICANT:\par\vskip 5pt
 	I hereby swear that the information provided above is accurate. I acknowledge that any error or inaccurary may lead to the denial of issuing visa or the denial of admission upon arrival, or even criminal investigation/prosecution.\par\vskip 5pt
-    \bfseries
+	\bfseries
 	Signature:\hfill
 	Date:\hfill
 	\hspace{1pt}\par
 }
+\vskip 15pt
+\hrule
+\begin{center}
+	\small OFFICIAL USE ONLY
+\end{center}
 
-
-\makeplainbox{,height=42mm}{\center\small OFFICIAL USE ONLY}
 
 
 

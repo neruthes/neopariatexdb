@@ -30,17 +30,22 @@
 \newlength{\formbrickcontentheight}
 \setlength{\formbrickcontentheight}{20pt}
 \newcommand{\makesoftformbrick}[3]{%
-    \parbox[t]{#1}{%
-        \vskip 4pt%
-        \vbox to 10.5pt{\small#2\vfill}\par%
+    \parbox[t]{#1-6pt}{%
+        \vskip 3pt%
+        \vbox to 10.5pt{\small\sffamily#2\vfill}\par%
         \normalsize\ttfamily#3
         \vskip 3pt%
     }%
 }
 % \newcommand{\formbrickVlineLeft}[0]{\vrule\hskip 5pt}
 \newcommand{\formbrickVlineLeft}[0]{\vrule\hskip 5pt\parbox[t][\formbrickcontentheight][t]{0pt}{\hspace{0pt}}}
-\newcommand{\formbrickVlineMid}[0]{\hskip 5pt\vrule\hskip 5pt}
+\newcommand{\formbrickVlineMid}[0]{\vrule\hskip 5pt}
 \newcommand{\formbrickVlineRight}[0]{\hfill\vrule}
+\newcommand{\formbrickMiniRow}[1]{
+    \vrule\hskip 5pt%
+    \parbox{\linewidth-6pt}{\leavevmode\vskip 1pt#1\vskip 2pt}%
+    \hfill\vrule%
+}
 
 
 
