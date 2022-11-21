@@ -29,12 +29,16 @@
 
 \newlength{\formbrickcontentheight}
 \setlength{\formbrickcontentheight}{20pt}
+\newlength{\formbrickpaddingtop}
+\setlength{\formbrickpaddingtop}{3pt}
+\newlength{\formbrickpaddingbottom}
+\setlength{\formbrickpaddingbottom}{3pt}
 \newcommand{\makesoftformbrick}[3]{%
     \parbox[t]{#1-6pt}{%
-        \vskip 3pt%
+        \vskip \formbrickpaddingtop%
         \vbox to 10.5pt{\small\sffamily#2\vfill}\par%
         \normalsize\ttfamily#3
-        \vskip 3pt%
+        \vskip \formbrickpaddingbottom%
     }%
 }
 % \newcommand{\formbrickVlineLeft}[0]{\vrule\hskip 5pt}
