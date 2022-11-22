@@ -1,0 +1,66 @@
+\input{.lib/form.class.tex}
+\begin{document}
+\NDFormCommonHeaderImpl{IMI-11}{Electronic Travel Authorization}{电子旅行许可 \S{} Autorisation de voyage électronique}
+
+
+
+\begin{minipage}{\textwidth}
+	\small
+	\textbf{INSTRUCTIONS}:
+	\\\inlinelistitem If you plan to travel to Neoparia Demokratia under the visa-waiver program, you must obtain this Electronic Travel Authorization in advance.
+	\\\inlinelistitem You do not need to carry a printed copy of this form when traveling.
+\end{minipage}
+\vskip 10pt
+
+
+\formbrickcontentheight=36pt
+\formbrickpaddingtop=6pt
+
+
+\section*{Basic Information}
+
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{\linewidth}{\formfieldlead Full Name (ASCII)}{JIM HACKER}\formbrickVlineRight%
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{\linewidth}{\formfieldlead Full Name (Raw)}{JIM HACKER}\formbrickVlineRight%
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{0.25\linewidth}{\formfieldlead Country Code}{GBR}\formbrickVlineMid%
+\makesoftformbrick{0.25\linewidth}{\formfieldlead Passport No.}{123456789}\formbrickVlineMid%
+\makesoftformbrick{0.25\linewidth}{\formfieldlead Nationality}{GBR}\formbrickVlineMid%
+\makesoftformbrick{0.25\linewidth}{\formfieldlead Date of Birth}{2000-01-01}\formbrickVlineRight%
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{0.5\linewidth}{\formfieldlead Serial Number}{166915332514530529\\\scalebox{1}[1.8]{\huge\fontspec{Libre Barcode 39}*166915332514530529*}}\formbrickVlineMid%
+\makesoftformbrick{0.5\linewidth}{\formfieldlead Visitor ID}{1789180418141821}\formbrickVlineRight%
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{\linewidth}{\formfieldlead Visa Policy}{\vbox to 4em{001: 7-day visa-free transit}}\formbrickVlineRight%
+\par\hrule
+% \formbrickVlineLeft%
+% \makesoftformbrick{\linewidth}{\formfieldlead Primary Address or First Night Stay Address}{xxxxxxxxxxxxxxx}\formbrickVlineRight%
+% \par\hrule
+% \formbrickVlineLeft%
+% \makesoftformbrick{\linewidth}{\formfieldlead Resident ID (Only if applicable)}{xxxxxxxxxxxxxxx}\formbrickVlineRight%
+% \par\hrule
+
+
+\section*{Supplemental Information}
+
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{\linewidth}{\formfieldlead Home Address}{\vbox to 6em{%
+    \rmfamily
+    <GBR> UNITED KINGDOM ((SW1A 2AA))\\
+    10 Downing Street // City of Westminster // LONDON
+}}\formbrickVlineRight%
+\par\hrule
+\formbrickVlineLeft%
+\makesoftformbrick{0.5\linewidth}{\formfieldlead Emergency Contact}{LUCY HACKER}\formbrickVlineMid%
+\makesoftformbrick{0.5\linewidth}{\formfieldlead Emergency Contact TEL}{+44 20 1234 5678}\formbrickVlineRight%
+\par\hrule
+
+
+\end{document}

@@ -16,3 +16,4 @@
 | IMI-8  | Electronic Visa Confirmation      |
 | IMI-9  | Visa Applicant Identity Statement |
 | IMI-10 | Arrival Card                      |
+| IMI-11 | Electronic Travel Authorization   |

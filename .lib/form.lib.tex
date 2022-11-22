@@ -34,7 +34,7 @@
 \newlength{\formbrickpaddingbottom}
 \setlength{\formbrickpaddingbottom}{3pt}
 \newcommand{\makesoftformbrick}[3]{%
-    \parbox[t]{#1-6pt}{%
+    \parbox[t]{#1-10.4pt}{%
         \vskip \formbrickpaddingtop%
         \vbox to 10.5pt{\small\sffamily#2\vfill}\par%
         \normalsize\ttfamily#3
@@ -43,11 +43,11 @@
 }
 % \newcommand{\formbrickVlineLeft}[0]{\vrule\hskip 5pt}
 \newcommand{\formbrickVlineLeft}[0]{\vrule\hskip 5pt\parbox[t][\formbrickcontentheight][t]{0pt}{\hspace{0pt}}}
-\newcommand{\formbrickVlineMid}[0]{\vrule\hskip 5pt}
+\newcommand{\formbrickVlineMid}[0]{\hskip 5pt\vrule\hskip 5pt}
 \newcommand{\formbrickVlineRight}[0]{\hfill\vrule}
 \newcommand{\formbrickMiniRow}[1]{
     \vrule\hskip 5pt%
-    \parbox{\linewidth-6pt}{\leavevmode\vskip 1pt#1\vskip 2pt}%
+    \parbox{\linewidth-10.4pt}{\leavevmode\vskip 1pt#1\vskip 2pt}%
     \hfill\vrule%
 }
 
