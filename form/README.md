@@ -17,3 +17,11 @@
 | IMI-9  | Visa Applicant Identity Statement |
 | IMI-10 | Arrival Card                      |
 | IMI-11 | Electronic Travel Authorization   |
+
+### COM: Commerce
+
+| Code  | Title                                |
+| ----- | ------------------------------------ |
+| COM-1 | Corporation Registration Application |
+| COM-2 | Declaration of Foreign Shareholder   |
+| COM-3 | Articles of Incorporation            |
